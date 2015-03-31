@@ -33,7 +33,7 @@ class TracebackGrep(object):
     def process(self, line):
         if self.tb:
             if line:
-                line = line[self.index:]
+                #line = line[self.index:]
                 self.tb += line
                 if line and line[0] != ' ':
                     tb = self.tb
